@@ -79,3 +79,9 @@ body{
 .content-footer p{
     text-align:center;
 }
+button{
+    padding: 15px;
+    border:none;
+    border-radius: 15px;
+    cursor:pointer;
+}

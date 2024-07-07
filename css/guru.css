@@ -1,0 +1,32 @@
+.content-teacher-body-header{
+    display: flex;
+    justify-content:space-between;
+}
+.content-teacher-body-header-button{
+    margin-top: 20px;
+}
+.content-teacher-body-header-button button{
+    background-color: lightgreen;
+}
+.teacher tr td:last-child button:first-child{
+    background-color: yellow;
+}
+.teacher tr td:last-child button:last-child{
+    background-color: red;
+    color:#fff;
+}
+.content-teacher-body{
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 400px;
+    overflow:scroll;
+}
+.content-teacher-footer{
+    text-align:center;
+}
+.teacher tr td,
+.teacher tr th{
+    font-size:15px;
+}
