@@ -1,0 +1,81 @@
+@font-face {
+    font-family:'poppins';
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+
+}
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    display: flex;
+    background-color: #12312312;
+}
+.menu-section-header{
+    display: flex;
+}
+.menu-section-header img{
+    width: 100px;
+    height: 100px;
+}
+.list-section{
+    display: flex;
+    align-items: center;  
+    cursor:pointer;
+    margin: 10px;
+    
+}
+.list-section .icon{
+    margin-right: 10px;
+}
+.list-section:hover{
+    color:lightblue;
+}
+.menu-section{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+    height: 100%;
+    padding: 10px;
+    box-sizing:border-box;
+    background-color: #fff;    
+}
+.content{
+    padding: 10px;
+}
+.search{
+    background-color: #fff;
+    padding: 10px;
+    border-radius:15px;
+    width: 100%;
+}
+.search button{
+    background-color: #fff;
+}
+.search button,
+.search input{
+    padding: 10px;
+    border:none;
+    outline:none;
+}
+.search input{
+    width: 500px;
+}
+.icons{
+    display: flex;
+    margin-left: 310px;
+}
+.icons-content{
+    margin: 10px 10px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius:10px;
+    cursor:pointer;
+}
+.content-header{
+    display: flex;
+}
+.content-body{
+    margin-bottom: 45%;
+}
+.content-footer p{
+    text-align:center;
+}
