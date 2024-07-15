@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/guru.css">
+    <link rel="stylesheet" href="../css/siswa.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>SIDAMUD</title>
@@ -66,40 +66,40 @@
                 </div>
             </div>
         </div>
-        <div class="content-teacher-body">
-            <div class="content-teacher-body-header">
-                <h1>Data Guru</h1>
-                <div class="content-teacher-body-header-button">
-                    <button>Tambah data Guru</button>
+        <div class="content-student-body">
+            <div class="content-student-body-header">
+                <h1>Data Siswa</h1>
+                <div class="content-student-body-header-button">
+                    <button>Tambah data Siswa</button>
                 </div>
             </div>
-            <div class="content-teacher-body-body">
-                <table class="teacher">
+            <div class="content-student-body-body">
+                <table class="student">
                     <thead>
-                        <tr  data-id="1">
+                        <tr>
                             <th>No.</th>
                             <th>Nama</th>
                             <th>Tanggal lahir</th>
                             <th>Jenis kelamin</th>
                             <th>Alamat</th>
-                            <th>No telepon</th>
-                            <th>Email</th>
-                            <th>Tanggal mulai</th>
+                            <th>Nama orang tua</th>
+                            <th>Nomor telepon</th>
+                            <th>Tanggal daftar</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr data-id="1">
-                            <td>1</td>
-                            <td>MAlwi Mahfudz</td>
-                            <td>dd-mm-yy</td>
-                            <td>Laki-laki</td>
-                            <td>Kp purasari</td>
-                            <td>00000000000</td>
-                            <td>email@gmail.com</td>
-                            <td>dd-mm-yyyy</td>
+                            <td>No.</td>
+                            <td>Nama</td>
+                            <td>Tanggal lahir</td>
+                            <td>Jenis kelamin</td>
+                            <td>Alamat</td>
+                            <td>Nama orang tua</td>
+                            <td>Nomor telepon</td>
+                            <td>Tanggal daftar</td>
                             <td>
-                                <button onclick="UpdateTeacher(1)">Edit</button>
+                                <button onclick="UpdateStudent(1)">Edit</button>
                                 <button>Delete</button>
                             </td>
                         </tr>
@@ -107,24 +107,24 @@
                 </table>
             </div>
         </div>
-        <div class="content-teacher-footer">
+        <div class="content-student-footer">
             <p>Copyright &copy 20224 - Sistem Data Manajemen Paud</p>
         </div>
-        <div class="modal-create-teacher">
-            <div class="modal-create-teacher-content">
-                <div class="modal-create-teacher-content-header">
-                    <h1>Form Tambah Guru</h1>
+        <div class="modal-create-student">
+            <div class="modal-create-student-content">
+                <div class="modal-create-student-content-header">
+                    <h1>Form Tambah Siswa</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-create-teacher-body">
-                    <ul class="create-teacher">
+                <div class="modal-create-student-body">
+                    <ul class="create-student">
                         <li>
                             <p class="title-form">
-                                Nama Guru
+                                Nama Siswa
                             </p>
                             <div class="form-body nama_guru">
                                 <input type="text">
-                                <p class="message">Kolom Nama guru wajib di isi</p>
+                                <p class="message">Kolom Nama Siswa wajib di isi</p>
                             </div>
                         </li>
                         <li>
@@ -160,16 +160,16 @@
                         </li>
                         <li>
                             <p class="title-form">
-                                Nomor telepon
+                                Nama orang tua
                             </p>
                             <div class="form-body telepon">
                                 <input type="text" class="telepon">
-                                <p class="message">Kolom Nomor telepon wajib di isi</p>
+                                <p class="message">Kolom Nama orang tua wajib di isi</p>
                             </div>
                         </li>
                         <li>
                             <p class="title-form">
-                                Email
+                                Nomor telepon
                             </p>
                             <div class="form-body email">
                                 <input type="email">
@@ -178,7 +178,7 @@
                         </li>
                         <li>
                             <p class="title-form">
-                                Tanggal mulai
+                                Tanggal daftar
                             </p>
                             <div class="form-body mulai">
                                 <input type="date">
@@ -187,21 +187,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modal-create-teacher-footer">
+                <div class="modal-create-student-footer">
                     <button>Tambah</button>
                 </div>
             </div>      
         </div>
-        <div class="modal-edit-teacher">
-            <div class="modal-edit-teacher-content">
-                <div class="modal-edit-teacher-content-header">
+        <div class="modal-edit-student">
+            <div class="modal-edit-student-content">
+                <div class="modal-edit-student-content-header">
                     <h1>Form edit Guru</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-edit-teacher-body">
-                    <table class="edit-teacher">
+                <div class="modal-edit-student-body">
+                    <table class="edit-student">
                         <tr>
-                            <td>Nama Guru</td>
+                            <td>Nama Siswa</td>
                             <td>:</td>
                             <td><input type="text"></td>
                         </tr>
@@ -226,29 +226,29 @@
                             <td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td>Nomor telepon</td>
+                            <td>Nama orangtua</td>
                             <td>:</td>
                             <td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td>Alamat email</td>
+                            <td>Nomor telepn</td>
                             <td>:</td>
                             <td><input type="email" name="" id=""></td>
                         </tr>
                         <tr>
-                            <td>Tanggal mulai</td>
+                            <td>Tanggal daftar</td>
                             <td>:</td>
                             <td><input type="date" name="" id=""></td>
                         </tr>
                     </table>
                 </div>
-                <div class="modal-edit-teacher-footer">
+                <div class="modal-edit-student-footer">
                     <button>Ubah</button>
                 </div>
             </div>      
         </div>
     </div>
     <script src="../js/all.min.js"></script>
-    <script src="../js/guru.js"></script>
+    <script src="../js/siswa.js"></script>
 </body>
 </html>

@@ -1,21 +1,21 @@
-.content-teacher-body-header{
+.content-class-body-header{
     display: flex;
     justify-content:space-between;
 }
-.content-teacher-body-header-button{
+.content-class-body-header-button{
     margin-top: 20px;
 }
-.content-teacher-body-header-button button{
+.content-class-body-header-button button{
     background-color: lightgreen;
 }
-.teacher tr td:last-child button:first-child{
+.class tr td:last-child button:first-child{
     background-color: yellow;
 }
-.teacher tr td:last-child button:last-child{
+.class tr td:last-child button:last-child{
     background-color: red;
     color:#fff;
 }
-.content-teacher-body{
+.content-class-body{
     background-color: #fff;
     padding: 50px;
     margin-top: 10px;
@@ -23,14 +23,15 @@
     height: 400px;
     overflow:scroll;
 }
-.content-teacher-footer{
+.content-class-footer{
     text-align:center;
 }
-.teacher tr td,
-.teacher tr th{
+.class tr td,
+.class tr th{
     font-size:15px;
+    padding-right:90px;
 }
-.modal-create-teacher{
+.modal-create-class{
     position: fixed;
     left: 0;
     top: 0;
@@ -41,32 +42,32 @@
     display: none;
     overflow: auto;
 }
-.modal-create-teacher-content{
+.modal-create-class-content{
     background-color: #fff;
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
 
 }
-.modal-create-teacher-content-header{
+.modal-create-class-content-header{
     display: flex;
     justify-content: space-between;
 }
-.modal-create-teacher-content-header span{
+.modal-create-class-content-header span{
     font-size: xx-large;
     font-weight: bolder;
     cursor: pointer;
 }
-.modal-create-teacher-content-header span:hover{
+.modal-create-class-content-header span:hover{
     color: red;
     transition: all 0.5s ease;
 }
 
-.modal-create-teacher-footer button{
+.modal-create-class-footer button{
     background-color:lightgreen;
     width:100%;
 }
-.modal-edit-teacher{
+.modal-edit-class{
     position: fixed;
     left: 0;
     top: 0;
@@ -74,62 +75,63 @@
     height: 100%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0,0,0,0.5);
-    display: none;
+    /* display: none; */
 }
-.modal-edit-teacher-content{
+.modal-edit-class-content{
     background-color: #fff;
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
 
 }
-.modal-edit-teacher-content-header{
+.modal-edit-class-content-header{
     display: flex;
     justify-content: space-between;
 }
-.modal-edit-teacher-content-header span{
+.modal-edit-class-content-header span{
     font-size: xx-large;
     font-weight: bolder;
     cursor: pointer;
 }
-.modal-edit-teacher-content-header span:hover{
+.modal-edit-class-content-header span:hover{
     color: red;
     transition: all 0.5s ease;
 }
-.edit-teacher input[type="text"],
-.edit-teacher input[type="date"],
-.edit-teacher select,
-.edit-teacher input[type="email"]{
+.edit-class input[type="text"],
+.edit-class input[type="date"],
+.edit-class select,
+.edit-class input[type="email"],
+.kapasitas input{
     padding: 10px;
     width: 100%;
     border: none;
     outline: none;
     background-color: #12312312;
 }
-.edit-teacher select{
+.edit-class select{
     width: 110%;
 }
-.modal-edit-teacher-footer{
+.modal-edit-class-footer{
     margin-top:15px;
 }
-.modal-edit-teacher-footer button{
+.modal-edit-class-footer button{
     background-color:yellow;
     width:100%;
 }
-.edit-teacher input[type="text"],.edit-teacher input[type="email"]{
+.edit-class input[type="text"],.edit-class input[type="email"]{
     width: 600%;
 }
-.edit-teacher input[type="date"]{
+.edit-class input[type="date"]{
     width: 600%;
 }
-.edit-teacher select{
+.edit-class select{
     width: 610%;
 }
 .message td{
     color: red;
     font-weight: bolder;
 }
-.create-teacher li{
+.create-class li{
     display: flex;
 }
 .form-body{
@@ -140,7 +142,8 @@
 .nama_guru{
     margin-left: 39px;
 }
-.nama_guru input{
+.nama_guru input,
+.kapasitas input{
     padding: 10px;
     min-width:1088px;
     max-width: 567%;
@@ -158,6 +161,12 @@
     color:red;
     font-weight: bolder;
     display: none;
+}
+.kapsitas-text{
+    margin-left: 30px;
+}
+.kapasitas input{
+    width: 100px;
 }
 .kelamin{
     margin-left: 27px;
@@ -206,4 +215,7 @@
     border:none;
     outline:none;
     background-color: #eeeeee;
+}
+.kapasitas input{
+    margin-left: 34px;
 }
