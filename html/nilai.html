@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/kelas.css">
+    <link rel="stylesheet" href="../css/nilai.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>SIDAMUD</title>
@@ -66,32 +66,34 @@
                 </div>
             </div>
         </div>
-         <div class="content-class-body">
-            <div class="content-class-body-header">
-                <h1>Data kelas</h1>
-                <div class="content-class-body-header-button">
-                    <button>Tambah data kelas</button>
+         <div class="content-nilai-body">
+            <div class="content-nilai-body-header">
+                <h1>Data nilai</h1>
+                <div class="content-nilai-body-header-button">
+                    <button>Tambah data nilai</button>
                 </div>
             </div>
-            <div class="content-class-body-body">
-                <table class="class">
+            <div class="content-nilai-body-body">
+                <table class="nilai">
                     <thead>
                         <tr  data-id="1">
                             <th>No.</th>
-                            <th>Nama kelas</th>
-                            <th>Kapasitas</th>
-                            <th>Nama Guru</th>
+                            <th>Nama Siswa</th>
+                            <th>Nama Mapel</th>
+                            <th>Nilai</th>
+                            <th>Tanggal nilai</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr data-id="1">
-                            <td>1</td>
-                            <td>MAlwi Mahfudz</td>
-                            <td>dd-mm-yy</td>
-                            <td>Laki-laki</td>
+                            <td>No.</td>
+                            <td>Nama Siswa</td>
+                            <td>Nama Mapel</td>
+                            <td>Nilai</td>
+                            <td>Tanggal nilai</td>
                             <td>
-                                <button onclick="UpdateDataClass(1)">Edit</button>
+                                <button onclick="UpdateDataNilai(1)">Edit</button>
                                 <button>Delete</button>
                             </td>
                         </tr>
@@ -99,83 +101,103 @@
                 </table>
             </div>
         </div>
-        <div class="content-class-footer">
+        <div class="content-nilai-footer">
             <p>Copyright &copy 20224 - Sistem Data Manajemen Paud</p>
         </div>
-        <div class="modal-create-class">
-            <div class="modal-create-class-content">
-                <div class="modal-create-class-content-header">
-                    <h1>Form Tambah kelas</h1>
+        <div class="modal-create-nilai">
+            <div class="modal-create-nilai-content">
+                <div class="modal-create-nilai-content-header">
+                    <h1>Form Tambah nilai</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-create-class-body">
-                    <ul class="create-class">
+                <div class="modal-create-nilai-body">
+                    <ul class="create-nilai">
                         <li>
                             <p class="title-form">
-                                Nama kelas
+                                Nama Siswa
                             </p>
-                            <div class="form-body nama_guru">
-                                <input type="text">
-                                <p class="message">Kolom Nama kelas wajib di isi</p>
+                            <div class="form-body nama_siswa">
+                                <select name="" id="">
+                                    <option value="pilih">Pilih Nama siswa</option>
+                                    <option value="dde">dede</option>
+                                </select>
+                                <p class="message">Kolom Nama Siswa wajib di isi</p>
                             </div>
                         </li>
                         <li>
                             <p class="title-form">
-                                Kapasitas 
+                                Nama Mapel
                             </p>
-                            <div class="form-body kapasitas">
-                                <input type="text">
-                                <p class="message kapsitas-text">Kolom kalapsitas wajib di isi</p>
+                            <div class="form-body mapel">
+                                <select name="" id="">
+                                    <option value="pilih">pilih Nama mapel</option>
+                                    <option value="dede">dede</option>
+                                </select>
+                                <p class="message mapel">Kolom  Nama Mapel wajib di isi</p>
                             </div>
                         </li>
                         <li>
                             <p class="title-form">
-                                Nama Guru
+                                Nilai
                             </p>
-                            <div class="form-body nama_guru">
+                            <div class="form-body nilai">
                                 <input type="text">
-                                <p class="message">Kolom Nama kelas wajib di isi</p>
+                                <p class="message">Kolom Nilai wajib di isi</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="title-form">
+                               Tanggal nilai
+                            </p>
+                            <div class="form-body tanggal_nilai">
+                                <input type="text">
+                                <p class="message">Kolom Tanggal nilai wajib di isi</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="modal-create-class-footer">
+                <div class="modal-create-nilai-footer">
                     <button>Tambah</button>
                 </div>
             </div>      
         </div>
-        <div class="modal-edit-class">
-            <div class="modal-edit-class-content">
-                <div class="modal-edit-class-content-header">
+        <div class="modal-edit-nilai">
+            <div class="modal-edit-nilai-content">
+                <div class="modal-edit-nilai-content-header">
                     <h1>Form edit kelas</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-edit-class-body">
-                    <table class="edit-class">
+                <div class="modal-edit-nilai-body">
+                    <table class="edit-nilai">
                         <tr>
-                            <td>Nama kelas</td>
+                            <td>Nama Siswa</td>
                             <td>:</td>
                             <td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td>Kapasitas</td>
+                            <td>Nama Mapel</td>
                             <td>:</td>
                             <td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td>Nama Guru</td>
+                            <td>Nilai</td>
                             <td>:</td>
                             <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal nilai</td>
+                            <td>:</td>
+                            <td><input type="date"></td>
                         </tr>
                     </table>
                 </div>
-                <div class="modal-edit-class-footer">
+                <div class="modal-edit-nilai-footer">
                     <button>Ubah</button>
                 </div>
             </div>      
         </div>
     </div>
     <script src="../js/all.min.js"></script>
-    <script src="../js/kelas.js"></script>
+    <script src="../js/nilai.js"></script>
 </body>
 </html>

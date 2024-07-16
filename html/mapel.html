@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/kelas.css">
+    <link rel="stylesheet" href="../css/mapel.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>SIDAMUD</title>
@@ -66,32 +66,28 @@
                 </div>
             </div>
         </div>
-         <div class="content-class-body">
-            <div class="content-class-body-header">
-                <h1>Data kelas</h1>
-                <div class="content-class-body-header-button">
-                    <button>Tambah data kelas</button>
+         <div class="content-mapel-body">
+            <div class="content-mapel-body-header">
+                <h1>Data nilai</h1>
+                <div class="content-mapel-body-header-button">
+                    <button>Tambah data nilai</button>
                 </div>
             </div>
-            <div class="content-class-body-body">
-                <table class="class">
+            <div class="content-mapel-body-body">
+                <table class="mapel">
                     <thead>
                         <tr  data-id="1">
                             <th>No.</th>
-                            <th>Nama kelas</th>
-                            <th>Kapasitas</th>
-                            <th>Nama Guru</th>
+                            <th>Nama Mapel</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr data-id="1">
-                            <td>1</td>
-                            <td>MAlwi Mahfudz</td>
-                            <td>dd-mm-yy</td>
-                            <td>Laki-laki</td>
+                            <td>No.</td>
+                            <td>Nama Mapel</td>
                             <td>
-                                <button onclick="UpdateDataClass(1)">Edit</button>
+                                <button onclick="UpdateDataMapel(1)">Edit</button>
                                 <button>Delete</button>
                             </td>
                         </tr>
@@ -99,83 +95,55 @@
                 </table>
             </div>
         </div>
-        <div class="content-class-footer">
+        <div class="content-mapel-footer">
             <p>Copyright &copy 20224 - Sistem Data Manajemen Paud</p>
         </div>
-        <div class="modal-create-class">
-            <div class="modal-create-class-content">
-                <div class="modal-create-class-content-header">
-                    <h1>Form Tambah kelas</h1>
+        <div class="modal-create-mapel">
+            <div class="modal-create-mapel-content">
+                <div class="modal-create-mapel-content-header">
+                    <h1>Form Tambah Mapel</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-create-class-body">
-                    <ul class="create-class">
+                <div class="modal-create-mapel-body">
+                    <ul class="create-mapel">
                         <li>
                             <p class="title-form">
-                                Nama kelas
+                                Mapel
                             </p>
-                            <div class="form-body nama_guru">
+                            <div class="form-body nilai">
                                 <input type="text">
-                                <p class="message">Kolom Nama kelas wajib di isi</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="title-form">
-                                Kapasitas 
-                            </p>
-                            <div class="form-body kapasitas">
-                                <input type="text">
-                                <p class="message kapsitas-text">Kolom kalapsitas wajib di isi</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="title-form">
-                                Nama Guru
-                            </p>
-                            <div class="form-body nama_guru">
-                                <input type="text">
-                                <p class="message">Kolom Nama kelas wajib di isi</p>
+                                <p class="message">Kolom Mapel wajib di isi</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="modal-create-class-footer">
+                <div class="modal-create-mapel-footer">
                     <button>Tambah</button>
                 </div>
             </div>      
         </div>
-        <div class="modal-edit-class">
-            <div class="modal-edit-class-content">
-                <div class="modal-edit-class-content-header">
+        <div class="modal-edit-mapel">
+            <div class="modal-edit-mapel-content">
+                <div class="modal-edit-mapel-content-header">
                     <h1>Form edit kelas</h1>
                     <span>X</span>
                 </div>
-                <div class="modal-edit-class-body">
-                    <table class="edit-class">
+                <div class="modal-edit-mapel-body">
+                    <table class="edit-mapel">
                         <tr>
-                            <td>Nama kelas</td>
-                            <td>:</td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Kapasitas</td>
-                            <td>:</td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Nama Guru</td>
+                            <td>Nama Mapel</td>
                             <td>:</td>
                             <td><input type="text"></td>
                         </tr>
                     </table>
                 </div>
-                <div class="modal-edit-class-footer">
+                <div class="modal-edit-mapel-footer">
                     <button>Ubah</button>
                 </div>
             </div>      
         </div>
     </div>
     <script src="../js/all.min.js"></script>
-    <script src="../js/kelas.js"></script>
+    <script src="../js/mapel.js"></script>
 </body>
 </html>
