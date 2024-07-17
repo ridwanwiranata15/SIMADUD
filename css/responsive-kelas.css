@@ -1,0 +1,133 @@
+@media (width:320px){
+    .menu-section{
+        display: none;
+        
+    }
+    .search{
+        width: 200px;
+    }
+    .search input{
+        width: 100px;
+    }
+    .icons{
+        margin: unset;
+        height: 60px;
+        margin-left: 33px;
+    }
+    .kelas{
+        
+    }
+    .user, .bell{
+        display: none;
+    }
+    .content-kelas-body-header h1{
+       font-size: 13px;
+       margin-top: 26px;
+    }
+    .content-kelas-body-header button{
+        font-size: 10px;
+    }
+    .kelas tr td:last-child button:nth-child(2){
+        display: block;
+        background-color: lightblue;
+    }
+    .kelas tr th:nth-child(3),.kelas tr td:nth-child(3),
+    .kelas tr th:nth-child(4),.kelas tr td:nth-child(4),
+    .kelas tr th:nth-child(5),.kelas tr td:nth-child(5),
+    .kelas tr th:nth-child(6),.kelas tr td:nth-child(6),
+    .kelas tr th:nth-child(7),.kelas tr td:nth-child(7),
+    .kelas tr th:nth-child(8),.kelas tr td:nth-child(8)
+    {
+        display: none;
+    }
+    .kelas tr td:last-child{
+        display: flex;
+    }
+    .kelas tr td:last-child button{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .kelas tr td{
+        font-size: 10px;
+    }
+    .modal-create-kelas-content-header h1,
+    .modal-create-kelas-content-header span{
+        font-size: 15px;
+    }
+    .modal-create-kelas{
+        
+    }
+    .modal-create-kelas-body input,
+    .modal-create-kelas-body input[type="date"],
+    .modal-create-kelas-body select,
+    .telepon
+    {
+       
+    }
+    .modal-create-kelas-content{
+        width: 280px;
+        display: block;
+        margin: 10px auto;
+    }
+    .create-kelas li{
+        display: block;
+    }
+    .nama_guru,
+    .alamat,
+    .email,
+    .mulai,
+    .kelamin,
+    .lahir,
+    .telepon{
+        margin: unset;
+        width: 10px;
+    }
+    .show{
+        display: block;
+        position:absolute;
+        box-shadow: 5px 5px 5px 5px black;
+    }
+    .nama_guru input{
+        padding: 10px;
+        min-width:200px;
+        max-width: 100%;
+    }
+    .lahir input[type="date"]{
+        padding:10px;
+        min-width:200px;
+        max-width: 100%;
+    }
+    .kelamin select{
+        padding: 10px;
+        min-width:220px;
+        max-width: 100%;
+    }
+    .alamat input{
+        min-width:200px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .telepon{
+        min-width:200px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .email input[type="email"]{
+        padding: 10px;
+        min-width:210px;
+        max-width: 100%;
+    }
+    .mulai input[type="date"]{
+        min-width:210px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .hamburger{
+        display: block;
+
+    }
+    .user, .pesan{
+        display: none;
+    }
+}
+

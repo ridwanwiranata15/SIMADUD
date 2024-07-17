@@ -94,3 +94,7 @@ function UpdateStudent(id){
     formDate[0].value = ValueForm[2].textContent;
     formDate[1].value = ValueForm[7].textContent;
 }
+document.querySelector(".hamburger").addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(".menu-section").classList.toggle("show");
+})

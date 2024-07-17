@@ -1,0 +1,133 @@
+@media (width:320px){
+    .menu-section{
+        display: none;
+        
+    }
+    .search{
+        width: 200px;
+    }
+    .search input{
+        width: 100px;
+    }
+    .icons{
+        margin: unset;
+        height: 60px;
+        margin-left: 33px;
+    }
+    .mapel{
+        
+    }
+    .user, .bell{
+        display: none;
+    }
+    .content-mapel-body-header h1{
+       font-size: 13px;
+       margin-top: 26px;
+    }
+    .content-mapel-body-header button{
+        font-size: 10px;
+    }
+    .mapel tr td:last-child button:nth-child(2){
+        display: block;
+        background-color: lightblue;
+    }
+    .mapel tr th:nth-child(3),.mapel tr td:nth-child(3),
+    .mapel tr th:nth-child(4),.mapel tr td:nth-child(4),
+    .mapel tr th:nth-child(5),.mapel tr td:nth-child(5),
+    .mapel tr th:nth-child(6),.mapel tr td:nth-child(6),
+    .mapel tr th:nth-child(7),.mapel tr td:nth-child(7),
+    .mapel tr th:nth-child(8),.mapel tr td:nth-child(8)
+    {
+        display: none;
+    }
+    .mapel tr td:last-child{
+        display: flex;
+    }
+    .mapel tr td:last-child button{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .mapel tr td{
+        font-size: 10px;
+    }
+    .modal-create-mapel-content-header h1,
+    .modal-create-mapel-content-header span{
+        font-size: 15px;
+    }
+    .modal-create-mapel{
+        
+    }
+    .modal-create-mapel-body input,
+    .modal-create-mapel-body input[type="date"],
+    .modal-create-mapel-body select,
+    .telepon
+    {
+       
+    }
+    .modal-create-mapel-content{
+        width: 280px;
+        display: block;
+        margin: 10px auto;
+    }
+    .create-mapel li{
+        display: block;
+    }
+    .nama_guru,
+    .alamat,
+    .email,
+    .mulai,
+    .kelamin,
+    .lahir,
+    .telepon{
+        margin: unset;
+        width: 10px;
+    }
+    .show{
+        display: block;
+        position:absolute;
+        box-shadow: 5px 5px 5px 5px black;
+    }
+    .nama_guru input{
+        padding: 10px;
+        min-width:200px;
+        max-width: 100%;
+    }
+    .lahir input[type="date"]{
+        padding:10px;
+        min-width:200px;
+        max-width: 100%;
+    }
+    .kelamin select{
+        padding: 10px;
+        min-width:220px;
+        max-width: 100%;
+    }
+    .alamat input{
+        min-width:200px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .telepon{
+        min-width:200px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .email input[type="email"]{
+        padding: 10px;
+        min-width:210px;
+        max-width: 100%;
+    }
+    .mulai input[type="date"]{
+        min-width:210px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .hamburger{
+        display: block;
+
+    }
+    .user, .pesan{
+        display: none;
+    }
+}
+

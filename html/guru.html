@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/guru.css">
+    <link rel="stylesheet" href="../css/reponsive-guru.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>SIDAMUD</title>
@@ -40,6 +41,14 @@
                 <i class="fas fa-calendar-check icon"></i>
                 <h3>Kehadiran</h3>                
             </div>
+            <div class="list-section hide">
+                <i class="fas fa-user icon"></i>
+                <h3>Profile</h3>                
+            </div>
+            <div class="list-section hide">
+                <i class="fas fa-bell icon"></i>
+                <h3>Notifikasi</h3>                
+            </div>
         </div>
         <div class="menu-section-footer">
             <div class="list-section">
@@ -55,13 +64,13 @@
                 <input type="text" placeholder="Cari / Search">
             </div>
             <div class="icons">
-                <div class="icons-content">
-                    <i class="fas fa-user"></i>
+                <div class="icons-content user">
+                    <i class="fas fa-user "></i>
                 </div>
-                <div class="icons-content">
+                <div class="icons-content hamburger">
                     <i class="fas fa-solid fa-bars"></i>
                 </div>
-                <div class="icons-content">
+                <div class="icons-content bell">
                     <i class="fa-solid fa-bell"></i>
                 </div>
             </div>
@@ -100,6 +109,7 @@
                             <td>dd-mm-yyyy</td>
                             <td>
                                 <button onclick="UpdateTeacher(1)">Edit</button>
+                                <button>Detail</button>
                                 <button>Delete</button>
                             </td>
                         </tr>
@@ -250,5 +260,6 @@
     </div>
     <script src="../js/all.min.js"></script>
     <script src="../js/guru.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

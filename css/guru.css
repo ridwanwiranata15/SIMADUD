@@ -30,6 +30,10 @@
 .teacher tr th{
     font-size:15px;
 }
+.teacher tr td:last-child button:nth-child(2){
+    display: none;
+    background-color: lightblue;
+}
 .modal-create-teacher{
     position: fixed;
     left: 0;
@@ -206,4 +210,10 @@
     border:none;
     outline:none;
     background-color: #eeeeee;
+}
+.hide{
+    display: none;
+}
+.content-reponsive-320px{
+    display: none;
 }
