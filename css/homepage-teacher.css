@@ -1,0 +1,160 @@
+@font-face {
+    font-family:'poppins';
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+
+}
+a{
+    text-decoration:none;   
+
+}
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    background-color: #12312312;
+}
+.homepage-logo{
+    display: flex;
+}
+.homepage-logo-image img{
+    width: 140px;
+    height: 140px;
+}
+.homepage-profile-user-image img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.title-menu-user img{
+    width: 70px;
+    height: 70px;
+}
+.list-thumb{
+    display: flex;
+}
+.title-menu-user {
+    display: flex;
+}
+.homepage-profile-user-list-menu-user ul{
+    list-style: none;
+}
+.homepage-profile-user-list-menu-user ul li{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.homepage-profile-user-list-menu-user{
+    background-color: #fff;
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: none;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+}
+.homepage-profile-user{
+    margin: 10px;
+}
+.homepage-profile-user-image {
+    margin-left: 300px;
+}
+.homepage-profile-user-list-menu-user ul li:hover{
+    color: lightblue;
+    transition: 0.4s all ease;
+}
+.show-homepage-profile-user-image{
+    display: block;
+    transition: 0.6s ease;
+}
+
+.content-body-header select{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none; 
+}
+.content-body{
+    padding: 10px;
+}
+.homepage-profile-user-list-menu-user{
+    position: fixed;
+}
+.content-body-content-tugas-body table tbody tr td:last-child button{
+    padding: 10px;
+    cursor:pointer;
+    border: none;   
+}
+.content-body-content-tugas-body table thead tr th{
+    padding-right: 160px;
+}
+.content-body-content-tugas-body table tbody tr td:last-child button:first-child{
+    background-color: yellow;
+}
+
+.content-body-content-tugas-body table tbody tr td:last-child button:nth-child(2){
+    background-color:lightblue;
+    color: black;
+}
+.content-body-content-tugas-body table tbody tr td:last-child button:nth-child(3){
+    background-color:orange;
+    color: black;
+}
+.content-body-content-tugas-body table tbody tr td:last-child button:last-child{
+    background-color:red;
+    color:#fff;
+}
+.content-body-content-tugas-header {
+    display: flex;
+    justify-content: space-between;
+}
+.content-body-content-tugas-header-button button{
+    padding: 10px;
+    cursor:pointer;
+    background-color: lightgreen;
+    border:none;
+}
+.content-body-content-tugas-header-button{
+    margin-top: 35px;
+}
+.content-body-content-materi{
+    display: none;
+}
+
+.content-body-content-materi-body table tbody tr td:last-child button{
+    padding: 10px;
+    cursor:pointer;
+    border: none;   
+}
+.content-body-content-materi-body table thead tr th{
+    padding-right: 200px;
+}
+.content-body-content-materi-body table tbody tr td:last-child button:first-child{
+    background-color: yellow;
+}
+
+.content-body-content-materi-body table tbody tr td:last-child button:nth-child(2){
+    background-color:lightblue;
+    color: black;
+}
+.content-body-content-materi-body table tbody tr td:last-child button:nth-child(3){
+    background-color:orange;
+    color: black;
+}
+.content-body-content-materi-body table tbody tr td:last-child button:last-child{
+    background-color:red;
+    color:#fff;
+}
+.content-body-content-materi-header {
+    display: flex;
+    justify-content: space-between;
+}
+.content-body-content-materi-header-button button{
+    padding: 10px;
+    cursor:pointer;
+    background-color: lightgreen;
+    border:none;
+}
+.content-body-content-materi-header-button{
+    margin-top: 35px;
+}
