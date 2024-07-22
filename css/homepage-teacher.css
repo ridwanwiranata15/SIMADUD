@@ -195,3 +195,14 @@ body{
     cursor: pointer;
     background-color: lightgreen;
 }
+.list-tugas{
+    display:flex;
+}
+.jenis-tugas{
+    margin-left: 10px;
+    margin-top: 26px;
+}
+.tenggat-waktu{
+    margin-top: 25px;
+    margin-left: 10px;
+}
