@@ -47,3 +47,16 @@ document.querySelector(".modal-create-tugas-content-header span").addEventListen
     e.preventDefault();
     document.querySelector(".modal-create-tugas").style.display = "none";
 })
+document.querySelector(".content-body-content-tugas-header-button button").addEventListener("click", function(e){
+   e.preventDefault();
+   document.querySelector(".modal-create-tugas").style.display = "block";
+})
+const jenisTugas = document.querySelector(".jenis");
+jenisTugas.addEventListener("click", function(e){
+    e.preventDefault();
+    if(jenisTugas.textContent == "Pilihan ganda"){
+        alert(`pilihan ganda`)
+    }else{
+        alert(`Essai`)
+    }
+})
