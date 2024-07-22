@@ -195,14 +195,22 @@ body{
     cursor: pointer;
     background-color: lightgreen;
 }
-.list-tugas{
-    display:flex;
+.message{
+    color:red;
+    font-weight:bolder; 
+    display: none;
+} 
+.create-tugas input{
+    width:610%;
+    padding: 10px;
 }
-.jenis-tugas{
-    margin-left: 10px;
-    margin-top: 26px;
+.create-tugas select{
+    min-width: 620%;
+    padding: 10px;
 }
-.tenggat-waktu{
-    margin-top: 25px;
-    margin-left: 10px;
+.create-tugas input,
+.create-tugas select{
+    border:none;
+    outline: none;
+    background: #efefef;
 }
